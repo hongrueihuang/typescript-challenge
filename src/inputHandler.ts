@@ -11,8 +11,6 @@
  * 輸出: 'Input is a number: 123'
  */
 
-export function handleInput(input: number | string) {
+export function handleInput(input) {
     // 在此實現函式
-    const type = typeof input
-    return `Input is a ${type}: ${input}`
 }

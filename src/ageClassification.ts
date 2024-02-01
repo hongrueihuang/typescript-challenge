@@ -12,4 +12,24 @@
  */
 export function classifyAge(age: number): string {
     // 請在此處寫下你的程式碼
+    let role = ''
+    switch (true) {
+        case age <= 12 : {
+            role = 'Child'
+            break
+        }
+        case age > 12 && age <= 17: {
+            role = 'Teenager'
+            break
+        }
+        case age > 17 && age <=64: {
+            role = 'Adult'
+            break
+        }
+        case age >= 65: {
+            role = 'Senior'
+            break
+        }
+    }
+    return role
 }

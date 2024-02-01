@@ -1,3 +1,5 @@
+import { c } from "vitest/dist/reporters-5f784f42.js";
+
 /**
  * 任務：實作一個函式 `parseUrl`，嘗試用 URL 方法，解析網址並 return 其組成部分。
  *
@@ -20,4 +22,10 @@ interface UrlParts {
 
 export function parseUrl(url: string): UrlParts {
    // 請在此處寫下你的程式碼
+  const urlObj = new URL(url)
+  return {
+    protocol: urlObj.protocol,
+    hostname: urlObj.hostname,
+    path: urlObj.pathname
+  }
 }
